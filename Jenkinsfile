@@ -37,7 +37,7 @@ node{
     }
 	  post {
 		  always {
-			  sh 'docker logout'
+			  sh 'ssh  ubuntu@172.31.20.72 docker logout || true'
 		  }
 	  }     
      
